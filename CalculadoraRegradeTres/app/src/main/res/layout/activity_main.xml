@@ -1,0 +1,71 @@
+<?xml version="1.0" encoding="utf-8"?>
+<RelativeLayout xmlns:android="http://schemas.android.com/apk/res/android"
+    xmlns:app="http://schemas.android.com/apk/res-auto"
+    xmlns:tools="http://schemas.android.com/tools"
+    android:layout_width="match_parent"
+    android:layout_height="match_parent"
+    tools:context=".MainActivity">
+
+    <EditText
+        android:id="@+id/A"
+        android:layout_width="210dp"
+        android:layout_height="wrap_content"
+        android:layout_alignParentLeft="true"
+        android:layout_marginTop="16sp"
+        android:gravity="center"
+        android:hint='A'
+        android:inputType="numberDecimal" />
+
+
+    <EditText
+        android:id="@+id/B"
+        android:layout_width="match_parent"
+        android:layout_height="wrap_content"
+        android:layout_alignParentRight="true"
+        android:layout_marginTop="16sp"
+        android:layout_toEndOf="@+id/A"
+        android:gravity="center"
+        android:hint='B'
+        android:inputType="numberDecimal" />
+
+    <EditText
+        android:id="@+id/C"
+        android:layout_width="210sp"
+        android:layout_height="wrap_content"
+        android:layout_marginTop="128sp"
+        android:layout_marginRight="0dp"
+        android:gravity="center"
+        android:hint='C'
+        android:inputType="numberDecimal" />
+
+    <TextView
+        android:id="@+id/X"
+        android:layout_width="match_parent"
+        android:layout_height="wrap_content"
+        android:layout_below="@+id/B"
+        android:layout_alignParentRight="true"
+        android:layout_marginStart="0dp"
+        android:layout_marginTop="67dp"
+        android:layout_marginRight="0dp"
+        android:layout_toEndOf="@+id/C"
+        android:gravity="center"
+        android:text='X'
+        android:textColor="@color/black"
+        android:textSize="25dp"
+        />
+
+    <Button
+        android:id="@+id/button_calculate"
+        android:layout_width="match_parent"
+        android:layout_height="wrap_content"
+        android:layout_marginTop="32sp"
+        android:backgroundTint="@color/teal_200"
+        android:onClick="teste"
+        android:padding="15dp"
+        android:text="@string/calculate"
+        android:textAllCaps="true"
+        android:layout_below="@+id/X"
+        android:textSize="20sp" />
+
+
+</RelativeLayout>
